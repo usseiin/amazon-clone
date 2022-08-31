@@ -4,7 +4,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 
 const DB =
-  "mongodb+srv://usseiin:Tawakalitu12@cluster0.yh34xgs.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://usseiin:<password>@cluster0.yh34xgs.mongodb.net/?retryWrites=true&w=majority";
 
 //Import from other files
 const authRouter = require("./route/auth");
@@ -16,7 +16,7 @@ const userRouter = require('./route/user');
 //creating a API
 //get put post delete update => crud
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 //init
 const app = express();

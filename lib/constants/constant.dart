@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-String uri = 'http://0.0.0.0:3001';
+String uri = 'https://usseiin-amazon-clone.herokuapp.com/:3001';
 
 class GlobalVariable {
   static const appBarGradient = LinearGradient(
